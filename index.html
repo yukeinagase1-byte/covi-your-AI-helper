@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Covi — Your AI Friend</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="avatar">C</div><div><b>Covi</b><small>Your AI Friend</small></div></div>
+    <button id="newChat" class="new-chat">＋ New Chat</button>
+    <div id="chatList" class="chat-list"></div>
+    <button id="termsBtn" class="terms-btn">📜 Terms of Use</button>
+  </aside>
+
+  <main class="main">
+    <header>
+      <button id="menuBtn" class="menu">☰</button>
+      <div><h1 id="chatTitle">New Chat</h1><span>🤖 Covi</span></div>
+      <button id="renameBtn" class="icon-btn" title="Rename chat">✏️</button>
+    </header>
+
+    <section id="messages" class="messages">
+      <div class="welcome">
+        <div class="big-avatar">C</div>
+        <h2>Hi! I'm Covi 👋</h2>
+        <p>I'm your AI friend. Start a conversation below!</p>
+      </div>
+    </section>
+
+    <form id="composer" class="composer">
+      <input id="messageInput" autocomplete="off" placeholder="Message Covi..." maxlength="4000">
+      <button type="submit">➤</button>
+    </form>
+    <p class="note">Covi is an AI and can make mistakes. Never share passwords or other private information.</p>
+  </main>
+</div>
+
+<div id="modal" class="modal hidden">
+  <div class="modal-card">
+    <button id="closeModal" class="close">×</button>
+    <h2>📜 Covi Terms of Use</h2>
+    <p>Please use Covi respectfully. Harassment, threats, abuse, and harmful misuse are not allowed.</p>
+    <ol>
+      <li>First violation: 1-day suspension</li>
+      <li>Second violation: 3-day suspension</li>
+      <li>Third violation: 7-day suspension</li>
+      <li>Fourth violation: 30-day suspension</li>
+      <li>Fifth violation: permanent suspension</li>
+    </ol>
+    <p>Serious violations may require stronger action. Users should have an appeal process. Ordinary frustration or criticism is not automatically a violation.</p>
+    <button id="acceptTerms" class="primary">Close</button>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
